@@ -1,0 +1,76 @@
+HEADER	Module Name	Method Name	Command Type	Command Tier	Description
+refreshcommands	main	refresh_commands	prefix	3	
+shutdown	superadmin_commands	shutdown	prefix	3	
+sendmessage	superadmin_commands	send_message	prefix	3	
+changename	superadmin_commands	change_name	prefix	3	
+changestatus	superadmin_commands	change_status	prefix	3	
+refreshsettings	superadmin_commands	refresh_settings	prefix	3	
+refreshappcommands	superadmin_commands	refresh_app_commands	prefix	3	
+admin	superadmin_commands	add_admin	prefix	3	
+unadmin	superadmin_commands	remove_admin	prefix	3	
+purge	superadmin_commands	purge	prefix	3	
+updatesetting	admin_commands	update_setting	prefix	2	
+addsetting	admin_commands	add_setting	prefix	2	
+removesetting	admin_commands	remove_setting	prefix	2	
+restrict	admin_commands	restrict_user	prefix	2	
+unrestrict	admin_commands	unrestrict_user	prefix	2	
+addresponse	admin_commands	add_response	prefix	2	
+removeresponse	admin_commands	remove_response	prefix	2	
+oops	user_commands	oops	prefix	1	
+commands	user_commands	list_commands	prefix	1	
+help	user_commands	help	prefix	1	
+userinfo	user_commands	user_info	prefix	1	
+roll	user_commands	roll	prefix	1	
+ping	user_commands	ping	slash	1	ping!
+updateemojis	monkeh_commands	update_emojis	prefix	3
+setosu	monkeh_commands	set_osu	prefix	1	
+setmode	monkeh_commands	set_default_mode	prefix	1	
+user	monkeh_commands	get_user	prefix	1	
+stats	monkeh_commands	get_user	prefix	1	
+osu	monkeh_commands	get_user_osu	prefix	1	
+taiko	monkeh_commands	get_user_taiko	prefix	1	
+ctb	monkeh_commands	get_user_ctb	prefix	1	
+mania	monkeh_commands	get_user_mania	prefix	1	
+profile	monkeh_commands	get_profile	prefix	1	
+recent	monkeh_commands	get_user_recent	prefix	1	
+rs	monkeh_commands	rs	prefix	1	
+compare	monkeh_commands	compare	prefix	1	
+c	monkeh_commands	compare	prefix	1	
+score	monkeh_commands	get_scores	prefix	1	
+best	monkeh_commands	get_user_best	prefix	1	
+top	monkeh_commands	get_user_best	prefix	1	
+beatmap	monkeh_commands	get_beatmaps	prefix	1	
+map	monkeh_commands	get_beatmaps	prefix	1	
+pp	monkeh_commands	calculate_pp	prefix	1	
+graph	monkeh_commands	graph	prefix	1	
+rb	monkeh_commands	recent_best	prefix	1	
+loopp_recalc	monkeh_commands	loopp_recalc	prefix	3	
+analyzereplay	monkeh_commands	analyze_replay	prefix	1	
+modstats	monkeh_commands	mod_stats	prefix	1	
+taikocard	monkeh_commands	taiko_card	prefix	1	
+mapperstats	monkeh_commands	mapper_stats	prefix	1	
+whatif	monkeh_commands	what_if	prefix	1	
+analyzerecent	monkeh_commands	analyze_recent	prefix	1	
+scrollspeeds	monkeh_commands	calc_scroll_speeds	prefix	1	
+notedensities	monkeh_commands	calc_note_densities	prefix	1	
+patterncomplexities	monkeh_commands	calc_pattern_complexities	prefix	1	
+taikoconvert	monkeh_commands	convert_to_taiko	prefix	1	
+diffvalues	monkeh_commands	calculate_difficulty	prefix	1	
+normalizesv	monkeh_commands	normalize_sv	prefix	3	
+oops	user_commands	slash_oops	slash	1	Deletes the bot message that was last generated from you.
+set_osu	monkeh_slash_commands	slash_set_osu	slash	1	Links an osu! profile to your Discord ID for monkeh.
+set_default_mode	monkeh_slash_commands	slash_set_default_mode	slash	1	Changes your default game mode for monkeh.
+get_user	monkeh_slash_commands	slash_get_user	slash	1	Gets a player's stats for a game mode.
+get_profile	monkeh_slash_commands	slash_get_profile	slash	1	Gets a player's osu! profile.
+get_recent	monkeh_slash_commands	slash_get_user_recent	slash	1	Gets a player's recent score.
+get_scores	monkeh_slash_commands	slash_get_scores	slash	1	Gets a player's scores for a beatmap.
+compare_score	monkeh_slash_commands	slash_compare	slash	1	Gets a player's scores for the most recently displayed map by monkeh on this channel.
+get_user_best	monkeh_slash_commands	slash_get_user_best	slash	1	Gets a player's top scores.
+get_beatmap	monkeh_slash_commands	slash_get_beatmap	slash	1	Gets a beatmap's info.
+calculate_pp	monkeh_slash_commands	slash_calculate_pp	slash	1	Simulates a score on a beatmap and calculates a pp value.
+difficulty_graph	monkeh_slash_commands	slash_graph	slash	1	Displays a graph of the difficulty of a beatmap.
+track	monkeh_slash_commands	track	slash	1	Tracks a player's top scores and posts updates to this channel.
+untrack	monkeh_slash_commands	untrack	slash	1	Stops tracking a player's top scores and posting updates in this channel.
+analyze_replay	monkeh_slash_commands	slash_analyze_replay	slash	1	Analyzes a replay and displays some accuracy information and a graph.
+convert_to_taiko	monkeh_slash_commands	slash_convert_to_taiko	slash	1	Converts a beatmap to Taiko
+match_cost	monkeh_slash_commands	match_cost	slash	3	Displays performance ratings for a multiplayer match

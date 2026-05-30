@@ -1,0 +1,128 @@
+﻿HEADER	Value	Tier
+token	REDACTED	
+custom_responses_table_name	tables/custom_responses	
+help_messages_table_name	monkeh_tables/help_messages	
+requestable_roles_table_name	tables/requestable_roles	
+message_refresh_commands_success	Commands refreshed successfully	
+message_refresh_commands_errors	There were some errors while refreshing commands:	
+message_refresh_app_commands_success	App commands refreshed successfully	
+message_refresh_settings_success	Settings refreshed	
+message_update_setting_failed	That setting name doesn't seem to exist or you don't have permission to edit it	
+message_update_setting_success	Updated {} from {} to {}	
+message_add_setting_failed	That setting name already exists	
+message_add_setting_success	Successfully added setting	
+message_remove_setting_failed	That setting name doesn't seem to exist or you don't have permission to edit it	
+message_remove_setting_success	Successfully removed setting	
+message_no_mentioned_user	I need exactly one mentioned user!	
+message_no_mentioned_user_2	I need exactly zero or one mentioned user!	
+message_add_admin_success	<@!{}> is now an admin!	
+message_add_admin_failed	That user is already an admin	
+message_remove_admin_success	<@!{}> is no longer an admin	
+message_remove_admin_failed	That user is not an admin	
+message_purge_invalid_param	Please give me an integer number of bot messages to purge	
+message_restrict_success	<@!{}> is now restricted from using {} commands	
+message_restrict_failed	That user is already restricted	
+message_restrict_failed_2	{} admins cannot be restricted	
+message_unrestrict_success	<@!{}> is now unrestricted from using {} commands	
+message_unrestrict_failed	That user is not restricted	
+message_add_response_success	Added a custom response: '{}' -> '{}'	
+message_add_response_failed	That trigger message already has a custom response message	
+message_remove_response_success	Removed a custom response	
+message_remove_response_failed	'{}' doesn't seem to have a corresponding custom response	
+message_add_requestable_roles_no_role	I need a role to add	
+message_add_requestable_roles_success	Roles added	
+message_remove_requestable_roles_no_role	I need a role to remove	
+message_remove_requestable_roles_success	Roles removed	
+message_userinfo_no_result	This user doesn't seem to exist	
+message_oops_success	Deleted last output from this user	
+message_oops_failed	No last output from this user to delete	
+message_roll_result	{} rolls {} point(s)	
+message_request_roles_no_guild	This command only works in a server	
+message_request_roles_no_roles	Looks like there are no requestable roles in this server	
+message_request_roles_start	Select a role to assign or unassign	
+message_request_roles_wrong_user	This interaction is serving someone else. You should run the command yourself to request roles.	
+message_request_roles_add_role_success	Added {} role	
+message_request_roles_add_role_failed	Failed to add {} role	
+message_request_roles_remove_role_success	Removed {} role	
+message_request_roles_remove_role_failed	Failed to remove {} role	
+message_request_roles_finished	All done	
+roll_default_max	100	2
+purge_search_limit	100	
+osu_api_url	https://osu.ppy.sh/api/	3
+osu_api_key	REDACTED	3
+osu_api_v2_url	https://osu.ppy.sh/api/v2/	3
+osu_api_v2_token_url	https://osu.ppy.sh/oauth/token	3
+client_id	REDACTED	3
+client_secret	REDACTED	3
+timestamp_format	%Y-%m-%d %H:%M:%S	3
+timestamp_format_v2	%Y-%m-%dT%H:%M:%S%z	
+default_num_scores	5	3
+default_num_maps	6	3
+pp_error	1	3
+query_result_limit	200	3
+message_set_osu_no_param	I need a username or a user id!	
+message_set_osu_success	Linked <@!{}> to osu! profile ``{}`` and set default game mode to {}	
+message_set_mode_no_param	I need a valid mode! (one of "osu", "taiko", "catch", or "mania")	
+message_set_mode_success	Set <@!{}>'s default game mode to {}	
+message_get_user_no_param	get_user requires the "u" parameter	
+message_get_user_no_result	no user found or user is banned	
+message_get_user_recent_no_param	get_user_recent requires the "u" parameter	
+message_get_user_recent_no_result	no user found or no {} recent plays found (24 hours)	
+message_get_user_best_no_param	get_user_best requires the "u" parameter	
+message_get_scores_no_param	get_scores requires the "b" parameter	
+message_get_scores_no_result	no scores found	
+message_get_scores_multiple_results	multiple scores found ({}); run the command again with mods to choose one	
+message_get_scores_choose	Which score do you want?	
+message_get_scores_choose_none	Erm...	
+message_get_beatmaps_no_result	Could not find the beatmap	
+message_get_replay_no_param	get_replay requires the “b” parameter	
+message_get_replay_not_available	replay is not available for this score	
+message_get_replay_error	get_replay returned an error: {}	
+message_get_replay_lazer_score_error	Sorry, I am currently unable to fetch or analyaze lazer replays	
+message_calculate_pp_invalid_param	One of those values were invalid	
+message_result_number_out_of_range	resultnumber was out of range (there were {} results)	
+message_result_number_invalid_range	That looks like an invalid range of numbers	
+message_osu_not_linked	I don't know who you are on osu! yet, let me know by running the setosu command!	
+message_no_active_beatmap	No active beatmap found on this channel	
+message_pp_calc_unsupported	Sorry, Taiko/Catch/Mania is not supported for this	
+message_ctb_map_unsupported	Sorry, I'm not able to show ctb beatmap info yet	
+message_ctb_score_unsupported	Sorry, I'm not able to show ctb score info yet	
+message_graph_mania_unsupported	Sorry, mania maps don't produce meaningful graphs right now	
+message_analyze_replay_unsupported_mode	Sorry, I can’t analyze ctb or mania replays yet	
+message_track_success	Tracking new top {} {} plays for {} in <#{}>	
+message_track_failure	{} is already being tracked for new top {} plays in <#{}>	
+message_track_failure_2	I don't have access to <#{}> to post tracking updates	
+message_untrack_success	No longer tracking new top {} plays for {} in <#{}>	
+message_untrack_failure	{} is not being tracked for new {} top plays in <#{}>	
+message_track_new_top	New #{} top play for {} in {}!\nRank: {} -> {}\nPP: {} -> {}	
+message_perf_calc_discrepancy	PerformanceCalculator calculated a different pp value than the official pp value ({:0.2f}).	
+osu_users_table	monkeh_tables/osu_users	
+beatmaps_timestamp_table	monkeh_tables/map_timestamps	
+beatmaps_download_folder	maps	
+beatmaps_graphs_folder	graphs	
+scores_folder	scores	
+scores_timestamp_table	scores/score_timestamps	
+track_table	monkeh_tables/track	
+top_score_history_table	monkeh_tables/top_score_history	
+background_task_interval	60	3
+track_cooldown	2	3
+track_enabled	1	3
+loopp_update_timestamp	2022-01-05 00:00:00	
+message_loopp_recalc_exists	Last updated: {}\nOld pp total: {}\nNew pp total: {}	
+message_loopp_recalc_progress	Working... (progress: {}/{})	
+message_loopp_recalc_done	All done! You can copy and paste this into a spreadsheet for easier viewing.\nOld pp total: {}\nNew pp total: {}	
+message_char_limit	2000	3
+message_something_broke	<:wat:512000662133800960>  ⚠️ ⚠️ **SOMETHING BROKE** ⚠️ ⚠️ <:wat:512000662133800960>	3
+replays_folder	replays	
+param_delim	 	
+message_alt_calc_delta	pp values were calculated using deltapp calculator (https://github.com/HeBuwei/osu) instead of official calculator. (last updated 2020-08-11)	
+message_alt_calc_loopp	pp values were calculated using loopp calculator (https://github.com/Eeveelution/loopy-taiko-pp) instead of official calculator. (last updated 2021-10-01)	
+message_alt_calc_preltca	pp values were calculated using pre-ltca calculator instead of official calculator. (last updated 2022-04-09)	
+message_alt_calc	pp values were calculated using the `{}` calculator instead of the current calculator.	
+si_extra_50	<:monkeh:770167604559347722>	
+si_extra_60	<a:monkehshake:985678784655142942>	
+si_extra_70	<a:hypermonkeh:852080791353032714>	
+si_extra_80	<a:monkehspin:852077499847933952>	
+si_extra_90	<a:monkehspin2:852075692870467605>	
+si_extra_100	<a:monkehspinfast:852077796728504341>	
+si_extra_elite	<:eeeh:1015849878187946064>	
